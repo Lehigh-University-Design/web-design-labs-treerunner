@@ -1,0 +1,118 @@
+:root {
+  --background-color: rgb(237, 246, 248);
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --link-color: rgb(196, 16, 205);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--background-color);
+  margin: 0 1em;
+  font-size: 16px;
+}
+
+/* universal selector */
+/*
+* {
+  text-align: center;
+}
+*/
+
+main {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#head h3 a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.sub-head {
+  margin-left: auto;
+  order: 2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* grouping selector (uses the style below on any h1 element on the page) */
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.special-headline {
+  font-weight: 900;
+  color: indigo;
+}
+
+#unique-headline {
+  font-weight: 600;
+  color: deeppink;
+}
+
+/* element selectors */
+h2, h3, h4 {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* our post class */
+.post {
+  border:1px solid var(--dark-color);
+  margin-bottom: 1em;
+  padding: .5em 1em;
+}
+
+/* #post is styled almost the same as .post except for the background color */
+#post {
+  border:1px solid var(--dark-color);
+  background-color: #ffffff;
+  margin-bottom: 1em;
+  padding: .5em 1em;
+}
+
+/* these styles are shared between .post and #post */
+.post, #post {
+  .img-container {
+    aspect-ratio: 3/2;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  a {
+    color: var(--link-color);
+    background-color: var(--light-color);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.highlight {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  h2 {
+    color: var(--light-color);
+  }
+}

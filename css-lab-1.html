@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>CSS Exercise 1: Intro / Syntax / Selectors</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+
+        <main>
+
+            <div id="head">
+                <div><h3><a href="index.html">DES 070 Labs</a></h3></div>
+                <div class="sub-head"><h3>CSS Exercise 1: Selectors</h3></div>
+            </div>
+            
+
+            <div class="post">
+                <h2>CSS Class Selector</h2>
+                <img src="../images/lightscape.jpg">
+                <p>This post element uses a class selector, .post. Classes are reusable.</p>
+            </div>
+
+            <div class="post">
+                <h2 class="special-headline">Another CSS Class Selector</h2>
+                <img src="../images/lightscape.jpg">
+                <p>This post element also uses .post.</p>
+                <p>Note the special class used to make a unique headline.</p>
+            </div>
+
+            <div id="post">
+                <h2>CSS ID Selector</h2>
+                <img src="../images/lightscape.jpg">
+                <p>This post element uses an id selector, #post. Ids should only be used one time.</p>
+            </div>
+
+            <div class="post highlight">
+                <h2>CSS Secondary Class Selector</h2>
+                <img src="../images/lightscape.jpg">
+                <p>This post element uses an additional class, .highlight, which we can use to override the styles in .post.</p>
+                <p>More information on <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">CSS Selectors at W3Schools</a>.</p>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>
