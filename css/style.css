@@ -318,7 +318,7 @@ h2, h3, h4 {
 }
 
 .grid-child {
-  min-height: 1em;
+  min-height: 30vh;
   background-color: #d6d6d6;
 }
 
@@ -365,6 +365,7 @@ h2, h3, h4 {
   gap: 1em;
   margin-bottom: 1em;
 }
+
 .grid-assign-child {
   min-height: 1em;
   background-color: #d6d6d6;
