@@ -24,7 +24,7 @@ body {
 main {
   position: relative;
   max-width: 1080px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #head {
@@ -309,6 +309,23 @@ h2, h3, h4 {
 
 /* CSS Lab 4: Grid */
 
+.artistcontainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.artistinfo {
+
+}
+
+.artistinfo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .grid-parent {
   display: grid;
   /*grid-template-columns: 25% 75%;*/
@@ -429,4 +446,35 @@ h2, h3, h4 {
   background-color: #600060;
   display: grid;
   place-content: center; /*start, center, end (shorthand for justify-content with align-content)*/
+}
+
+/*Flex Lab*/
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-card {
+  width: calc(100%/3);
+}
+
+.flex-card-inner {
+  margin: 1em;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  flex-direction: column;
+  text-align: center;
+  h4{
+    background-color: black;
+    display: inline-block;
+    color: #fff;
+    padding: .25em;
+  }
+  img {
+    border-radius: 50%;
+  }
 }
