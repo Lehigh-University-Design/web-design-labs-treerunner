@@ -97,7 +97,7 @@
     }
   }
   
-  .post:last-child, .big-post:last-child {
+  .sidebar-post:last-child, .big-post:last-child {
     margin-bottom: 0;
   }
   
