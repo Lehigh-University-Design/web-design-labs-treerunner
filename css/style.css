@@ -478,3 +478,15 @@ h2, h3, h4 {
     border-radius: 50%;
   }
 }
+
+/* simple grid framework lab */
+
+#simple-grid, #gallery-grid {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.gal-item {
+  width: 100%;
+  aspect-ratio: 1;
+}
