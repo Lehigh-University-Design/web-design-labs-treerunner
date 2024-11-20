@@ -1,8 +1,8 @@
 :root {
-  --background-color: rgb(237, 246, 248);
+  --background-color: #edf6f8;
   --light-color: #ffffff;
   --dark-color: #000000;
-  --link-color: rgb(196, 16, 205);
+  --link-color: #c410cd;
 }
 
 body {
@@ -62,12 +62,12 @@ h2 {
 
 .special-headline {
   font-weight: 900;
-  color: indigo;
+  color: #4b0082;
 }
 
 #unique-headline {
   font-weight: 600;
-  color: deeppink;
+  color: #ff1493;
 }
 
 /* element selectors */
@@ -192,7 +192,7 @@ h2, h3, h4 {
   right: 1em;
   width: 200px;
   padding: 1em;
-  background-color: coral;
+  background-color: #ff7f50;
   border: 1px solid var(--dark-color);
 }
 
@@ -489,4 +489,47 @@ h2, h3, h4 {
 .gal-item {
   width: 100%;
   aspect-ratio: 1;
+}
+
+/* mosaic gallery grid */
+
+#mosaic-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2vw;
+  margin-bottom: 2vw;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .big-tile{
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+  
+  .small-tile{
+    grid-column: span 2;
+  }
+  
+  .med-tile{
+    grid-column: span 3;
+  }
+
+  .tall-tile{
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+}
+
+@media screen and (max-width: 47.99rem){
+  #mosaic-gallery-grid{
+      display: block;
+  }
+  .tile{
+      margin-bottom: 1rem;
+  }
 }
