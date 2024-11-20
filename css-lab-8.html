@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/grid.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     </head>
 
     <body>
@@ -18,33 +19,46 @@
 
             <div id="head">
                 <div><h3><a href="index.html">DES 070 Labs</a></h3></div>
-                <div class="sub-head"><h3>CSS Exercise 8: Mosaic Gallery with CSS Grid</h3></div>
+                <div class="sub-head"><h3>CSS Exercise 8: Mosaic Gallery</h3></div>
             </div>
+
+            <div class="pattern-border"></div>
             
 
             <h3>Responsive Mosaic Gallery</h3>
 
             <div id="mosaic-gallery-grid">
                 <div class="tile big-tile">
-                    <img src="https://picsum.photos/seed/1/800/600">
+                    
                 </div>
                 <div class="tile small-tile">
-                    <img src="https://picsum.photos/seed/2/800/600">
+                    
                 </div>
                 <div class="tile small-tile">
-                    <img src="https://picsum.photos/seed/3/800/600">
+                    
                 </div>
                 <div class="tile med-tile">
-                    <img src="https://picsum.photos/seed/4/800/600">
+                    
                 </div>
                 <div class="tile med-tile">
-                    <img src="https://picsum.photos/seed/5/800/600">
+                    
                 </div>
 
             </div>
             
 
         </main>
+
+        <script>
+            const randomInt = (min,max) => 
+                max === undefined ? Math.floor(Math.random()*min) : 
+                min + Math.floor(Math.random()*(max - min + 1))
+
+                var elements = document.getElementsByClassName("tile");
+                for (var i = 0; i < elements.length; i++) {
+                elements[i].innerHTML = `<img src="https://picsum.photos/seed/${randomInt(200)}/800/600">`;
+                }
+        </script>
 
     </body>
 
